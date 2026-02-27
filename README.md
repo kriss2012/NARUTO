@@ -1,4 +1,3 @@
-````markdown
 # NARUTOK — Naruto Universe Showcase
 
 **Alternate Live Preview:** https://narutokr.netlify.app/
@@ -18,14 +17,11 @@ It includes:
 ✔ Built using React / Next.js
 
 Live projects hosted on Netlify:
-- 🌐 https://narutok.netlify.app/
 - 🌐 https://narutokr.netlify.app/
 
 ---
 
 ## 🚀 LiveLinks
-
-👉 **Primary:** https://narutok.netlify.app/  
 👉 **Alternate:** https://narutokr.netlify.app/
 
 Use either link to explore the live site in your browser.
