@@ -178,8 +178,3 @@ Thanks to the original creator and Netlify for hosting.
 
 Explore the site live:
 🔗 [https://narutokr.netlify.app/](https://narutokr.netlify.app/)
-
-```
-
----
-```
