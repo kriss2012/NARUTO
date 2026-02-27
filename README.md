@@ -1,36 +1,189 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+````markdown
+# NARUTOK — Naruto Universe Showcase
 
-## Getting Started
+**Alternate Live Preview:** https://narutokr.netlify.app/
 
-First, run the development server:
+Live demos of a *Naruto* fan-themed info site built with modern web technologies.
+
+---
+
+## 📌 About
+
+**NARUTOK** is a web application that presents key information from the *Naruto* anime world.  
+It includes:
+
+✔ Sections for **Home, Characters, Story, Villages**  
+✔ Visually engaging character cards and series timeline  
+✔ Fully responsive layout for web and mobile screens  
+✔ Built using React / Next.js
+
+Live projects hosted on Netlify:
+- 🌐 https://narutok.netlify.app/
+- 🌐 https://narutokr.netlify.app/
+
+---
+
+## 🚀 LiveLinks
+
+👉 **Primary:** https://narutok.netlify.app/  
+👉 **Alternate:** https://narutokr.netlify.app/
+
+Use either link to explore the live site in your browser.
+
+---
+
+## 🧠 Features
+
+- **Home Page** with introduction to the Naruto world  
+- **Character Grid** with major characters  
+- **Story Timeline** showing significant events  
+- **Villages Section** with summaries of ninja countries  
+- Fully responsive UI for desktop and mobile  
+- Modular component structure
+
+---
+
+## 🛠️ Stack Used
+
+| Layer                 | Technology       |
+|----------------------|------------------|
+| Frontend Framework   | React / Next.js  |
+| Styling              | CSS / Tailwind / SCSS (optional) |
+| Deployment           | Netlify          |
+
+---
+
+## 🏁 Getting Started (Local Development)
+
+To run this project locally, follow these steps:
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/yourusername/narutok.git
+cd narutok
+````
+
+### 2. Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Start Local Dev Server
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to preview locally.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🗂️ Project Structure
 
-## Learn More
+```
+narutok/
+├── public/
+│   ├── images/
+│   ├── favicon.ico
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── CharacterCard.js
+│   │   └── TimelineSection.js
+│   ├── pages/
+│   │   ├── index.js
+│   │   ├── characters.js
+│   │   ├── story.js
+│   │   └── villages.js
+│   ├── styles/
+│   │   ├── globals.css
+│   │   └── home.module.css
+│   └── utils/
+│       └── data.js
+├── .gitignore
+├── next.config.js
+├── package.json
+└── README.md
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧩 Example Component (CharacterCard.js)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```jsx
+import React from "react";
 
-## Deploy on Vercel
+const CharacterCard = ({ character }) => (
+  <div className="card">
+    <img src={character.image} alt={character.name} />
+    <h3>{character.name}</h3>
+    <p>{character.role}</p>
+  </div>
+);
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+export default CharacterCard;
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🎨 Styles Snapshot (`globals.css`)
+
+```css
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 2rem;
+  background: #000;
+  color: #fff;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+```
+
+---
+
+## 📦 Scripts
+
+| Script          | Description              |
+| --------------- | ------------------------ |
+| `npm run dev`   | Start local dev server   |
+| `npm run build` | Build production bundle  |
+| `npm run start` | Serve production locally |
+| `npm run lint`  | Lint project code        |
+
+---
+
+## 📜 License
+
+This project is open-source under the **MIT License**.
+
+---
+
+## ❤️ Acknowledgements
+
+Thanks to the original creator and Netlify for hosting.
+
+Explore the site live:
+🔗 [https://narutokr.netlify.app/](https://narutokr.netlify.app/)
+
+```
+
+---recreate the full project locally. Just ask! 😊
+```
